@@ -1,0 +1,3 @@
+# 1) Create the docker: `docker build -t log2transformation .`
+# 2) Copy the Excel file log2_input.xls into /host/directory/data
+docker run -v /host/directory/data:/data log2transformation /data/log2_input.xls /data/log2_output.xls
